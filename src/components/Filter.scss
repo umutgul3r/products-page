@@ -1,0 +1,44 @@
+.filter {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid black;
+  gap: 100px;
+  padding: 20px;
+  button {
+    background-color: white;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .filter-item {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .filter {
+    .filter-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    button {
+      visibility: visible;
+    }
+  }
+}

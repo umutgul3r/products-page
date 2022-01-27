@@ -1,0 +1,95 @@
+.basket {
+  img {
+    height: 50px;
+    width: 50px;
+  }
+  .basket-show {
+    position: absolute;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    right: 5px;
+    padding: 20px;
+    visibility: hidden;
+  }
+
+  .basket-hidden {
+    overflow: scroll;
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+    right: 5px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+
+    .basket-in {
+      display: flex;
+      margin-bottom: 5px;
+      img {
+        height: 60px;
+        width: 60px;
+        padding: 5px;
+      }
+      button {
+        background-color: #f27a1a;
+        border: none;
+
+        color: white;
+        padding: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .basket-img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .basket-wrapper {
+    height: 18px;
+    width: 18px;
+    background-color: #f27a1a;
+    border-radius: 100%;
+    position: absolute;
+    top: 13px;
+    right: 49px;
+    padding: 1.4px;
+
+    .basket-number {
+      color: black;
+      font-weight: 600;
+      margin-left: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .basket-img {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+  .basket-wrapper {
+    height: 18px;
+    width: 18px;
+    background-color: #f27a1a;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px !important;
+    right: 29px !important;
+    padding: 1.4px;
+
+    .basket-number {
+      color: black;
+      font-weight: 600;
+      margin-left: 5px;
+    }
+  }
+  .basket-hidden {
+    margin-top: 20px;
+    width: 150px !important;
+  }
+}
